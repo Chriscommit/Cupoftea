@@ -1,0 +1,818 @@
+/********************* GLOBAL ************************/
+
+@font-face {
+  font-family: "amaranth";
+  src: url("../font/amaranth.otf") format("openType");
+}
+
+html {
+  font-size: 62.5%;
+  background-color: #fff;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  padding: 0;
+  margin: auto;
+  max-width: 1100px;
+  background-color: #f2f2f2;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: "amaranth";
+}
+
+h2 {
+  font-size: 25px;
+  font-family: "amaranth";
+}
+
+h3 {
+  font-size: 20px;
+  font-family: "amaranth";
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  background-color: #fff;
+  margin: 30px auto;
+}
+
+/********************************************************** PAGE INDEX *******************************/
+
+/************************ HEADER *********************/
+
+header {
+  background-image: url("../images/bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.free-delivery {
+  margin: 0;
+  padding: 8px 0;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.ribbon {
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+.span-header {
+  display: none;
+}
+
+.container-logo-cart {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 5px;
+}
+
+.p-shopping {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100px;
+  border-top-right-radius: 52px;
+  border-bottom-right-radius: 52px;
+  box-shadow: 0px 0px 5px 0px #8a8a8a;
+  font-size: 24px;
+}
+
+.container-logo-cart .fa-shopping-cart {
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  font-size: 0.6em;
+  padding: 7px;
+  margin: 5px;
+}
+
+.container-logo-cart .logo {
+  display: block;
+  margin: auto;
+}
+
+.container-logo-cart p {
+  color: #fff;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+header nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px auto;
+  padding-bottom: 20px;
+}
+
+header nav a {
+  margin: 15px auto;
+  font-size: 1.3em;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+}
+
+/**************************** SECTION BANNER *******************/
+
+.section-banner {
+  display: none;
+}
+
+/************************** TITRE VERT H2 *********************/
+
+.section-choosetea h2,
+.section-bestoftea h2 {
+  text-align: center;
+  color: #98b012;
+  padding-top: 45px;
+}
+
+.section-choosetea h2:before,
+.section-choosetea h2:after,
+.section-bestoftea h2:before .section-bestoftea h2:after {
+  content: "";
+  width: 50px;
+  border-bottom: #e6ddd4 solid;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.section-choosetea h2:before,
+.section-bestoftea h2:before {
+  margin-right: 10px;
+  margin-left: -10px;
+}
+
+.section-choosetea h2:after,
+.section-bestoftea h2:after {
+  margin-right: -10px;
+  margin-left: 10px;
+}
+
+/************************* SECTION CHOOSE TEA ***************/
+
+.container-tea {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container-tea h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #626667;
+}
+
+/*************************** SECTION BEST OF TEA *************/
+
+.section-bestoftea article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+.section-bestoftea h3 {
+  color: #626667;
+}
+
+.section-bestoftea article p {
+  color: #65656d;
+  text-align: center;
+  line-height: 1.6;
+  font-weight: 600;
+}
+
+.container-span-strong {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #65656d;
+}
+
+.container-span-strong strong {
+  margin: 15px auto;
+  font-size: 24px;
+  color: #626667;
+}
+
+.section-bestoftea a {
+  background-color: #b09067;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 15px 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+/******************************** FOOTER *******************/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  margin: 0;
+  text-align: center;
+  background: url("../images/bg.jpg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*************************** FOOTER SECTION ADVANTAGES ****************/
+
+.section-advantages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #879e0f;
+  max-width: 100%;
+  margin: 0;
+  padding: 20px;
+}
+
+.section-advantages article {
+  color: rgba(255, 255, 255, 0.8);
+  width: 50%;
+  padding: 0;
+}
+
+.section-advantages i {
+  margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 24px;
+}
+
+.section-advantages p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+
+/***************************** FOOTER NAV ***********************/
+
+.footer-nav {
+  margin: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(150, 176, 17, 1) 70%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  width: 100%;
+  padding: 20px 0;
+}
+
+.footer-nav nav {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  background: transparent;
+}
+
+.footer-nav h3 {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+}
+
+.footer-nav a {
+  color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  font-size: 14px;
+}
+
+/*****************************************************************************************************************/
+/*************************************************** PAGE LISTING ***********************************************/
+/***************************************************************************************************************/
+
+.section-listing h2 {
+  text-align: center;
+  color: #98b012;
+  padding-top: 45px;
+}
+
+.section-listing h2:after {
+  content: "";
+  width: 55%;
+  border-bottom: #e6ddd4 solid;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0px;
+  margin-left: 10px;
+}
+
+.listing-thumbnail {
+  display: none;
+}
+
+.section-listing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.section-listing article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-listing p {
+  color: #74707e;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.section-listing h3 {
+  text-align: center;
+  color: #626667;
+  font-size: 16px;
+}
+
+.section-listing span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #65656d;
+}
+
+.section-listing strong {
+  margin: 15px auto;
+  font-size: 24px;
+  color: #626667;
+}
+
+.section-listing a {
+  display: block;
+  background-color: #b09067;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 15px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 20px auto 30px auto;
+}
+
+/*****************************************************************************************************************/
+/*************************************************** PAGE PRODUCT ***********************************************/
+/***************************************************************************************************************/
+
+.section-product article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  color: #616c5e;
+}
+
+.section-product form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-heading-article-product {
+  text-align: center;
+}
+
+.container-name-tea h2 {
+  font-weight: bold;
+}
+
+.container-name-tea p {
+  font-weight: bold;
+}
+
+.container-name-tea span {
+  font-style: italic;
+  font-family: "amaranth";
+  font-weight: 200;
+}
+
+.container-rating {
+  margin: 30px auto;
+}
+
+.container-rating i {
+  color: #f4e30d;
+}
+
+.container-rating .laststar {
+  color: #9e9e9e;
+}
+
+.container-rating a {
+  color: #98b042;
+}
+
+.container-img-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-img-form select {
+  width: 100%;
+  border: 1px solid #d3d4e8;
+}
+
+.container-img-form select {
+  color: #63686b;
+  font-weight: 600;
+  padding: 5px 0 5px 10px;
+}
+
+.container-img-form .price {
+  font-size: 40px;
+  font-weight: 600;
+  margin: 5px auto 50px auto;
+}
+
+.container-img-form button {
+  display: block;
+  background-color: #b09067;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 15px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: none;
+  width: 100%;
+}
+
+.container-img-form .add-list {
+  color: #98b042;
+}
+
+.container-img-form .add-list .fa-heart {
+  color: #e38c79;
+}
+
+.description-product {
+  font-weight: 500;
+}
+/*****************************************************************************************************************/
+/*************************************************** PAGE ABOUT ***********************************************/
+/***************************************************************************************************************/
+
+@media screen and (min-width: 768px) {
+  /************************ HEADER *********************/
+
+  html {
+    max-width: 1100px;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  header {
+    width: 100%;
+  }
+  .ribbon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100px;
+    margin-right: 0;
+  }
+
+  .container-logo-cart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+
+  .p-shopping {
+    width: auto;
+    box-shadow: none;
+    padding-right: 30px;
+  }
+
+  .container-logo-cart .logo {
+    padding-left: 30px;
+  }
+
+  .container-logo-cart .fa-shopping-cart {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .container-logo-cart .span-header {
+    display: flex;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  header nav {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  header nav a {
+    font-size: 16px;
+  }
+
+  /************************* BANNER ******************/
+
+  .section-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+  }
+
+  .section-banner h1 {
+    color: #98b012;
+    padding-bottom: 30px;
+  }
+
+  .section-banner span {
+    padding-top: 15px;
+    color: #626667;
+    font-size: 12px;
+  }
+
+  #flexslider {
+    margin: 40px auto;
+    border: none;
+  }
+
+  /**************************** SECTION CHOOSE TEA *************/
+
+  .container-tea h3 {
+    width: 50%;
+  }
+
+  /*********************** SECTION BEST OF TEA ***************/
+
+  .section-bestoftea a {
+    font-size: 15px;
+  }
+
+  .section-bestoftea h3 {
+    font-size: 16px;
+  }
+
+  .section-bestoftea article p {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  /*************************** SECTION AVDANTAGES **************/
+
+  .section-advantages {
+    flex-direction: row;
+    width: 100%;
+    padding: 40px 0;
+  }
+
+  .section-advantages article {
+    width: auto;
+  }
+
+  .section-advantages p {
+    font-size: 13px;
+  }
+
+  /**************************** FOOTER *************************/
+
+  .footer-nav {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .footer-copyright p {
+    width: 98%;
+    margin: auto;
+  }
+
+  /*****************************************************************************************************************/
+  /*************************************************** PAGE LISTING ***********************************************/
+  /***************************************************************************************************************/
+
+  .section-listing h2 {
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .section-listing h2:after {
+    width: 83.5%;
+  }
+  /*****************************************************************************************************************/
+  /*************************************************** PAGE PRODUCT ***********************************************/
+  /***************************************************************************************************************/
+
+  .nav-product {
+    margin-bottom: 0;
+  }
+  .section-product {
+    margin-top: 0;
+  }
+  .section-product article {
+    align-items: inherit;
+  }
+
+  .container-heading-article-product {
+    display: flex;
+    justify-content: start;
+    align-items: unset;
+    text-align: unset;
+    width: 96%;
+    margin: 0 auto;
+  }
+
+  .container-rating {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+    margin: 0;
+  }
+
+  .container-name-tea {
+    width: 50%;
+    align-items: flex-start;
+  }
+
+  .container-img-form {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .container-img-form img {
+    width: 50%;
+  }
+
+  .container-img-form form {
+    width: 50%;
+  }
+
+  .container-img-form select {
+    font-size: 14px;
+  }
+
+  .description-product {
+    font-size: 14px;
+  }
+
+  .container-img-form .add-list {
+    font-size: 14px;
+  }
+
+  .container-img-form form {
+    align-items: flex-end;
+  }
+
+  .container-img-form .price {
+    text-align: right;
+    margin: 10px 0 50px 0;
+  }
+  /*****************************************************************************************************************/
+  /*************************************************** PAGE ABOUT µ ***********************************************/
+  /***************************************************************************************************************/
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    max-width: 80%;
+    margin: auto;
+  }
+
+  .container-logo-cart {
+    max-width: 80%;
+    margin: 20px auto;
+  }
+
+  header nav {
+    width: 80%;
+  }
+
+  .container-tea {
+    justify-content: space-between;
+  }
+
+  .container-tea h3 {
+    width: auto;
+  }
+
+  .section-bestoftea {
+    display: flex;
+    align-items: start;
+  }
+
+  .section-bestoftea article {
+    width: 30%;
+  }
+
+  section h2 {
+    font-size: 16px;
+  }
+
+  /*****************************************************************************************************************/
+  /*************************************************** PAGE LISTING ***********************************************/
+  /***************************************************************************************************************/
+
+  .section-listing {
+    padding: 20px;
+  }
+  .section-listing .container-article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .section-listing article {
+    width: 33%;
+  }
+
+  .listing-thumbnail {
+    display: flex;
+    float: left;
+    padding-top: 40px;
+  }
+
+  .section-listing h2:after {
+    width: 73%;
+  }
+
+  .section-listing h2 {
+    margin: 0;
+  }
+  /*****************************************************************************************************************/
+  /*************************************************** PAGE PRODUCT ***********************************************/
+  /***************************************************************************************************************/
+
+  .section-product article {
+    padding-bottom: 20px;
+  }
+  .container-name-tea h2 {
+    font-size: 30px;
+    width: 100%;
+  }
+
+  /*****************************************************************************************************************/
+  /*************************************************** PAGE ABOUT µ ***********************************************/
+  /***************************************************************************************************************/
+
+  .section-team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: calc(50vh);
+  }
+  .section-team h3 {
+    font-family: "amaranth";
+    font-size: 20px;
+    font-weight: 400;
+    margin: 20px auto;
+    text-align: left;
+    width: 100%;
+  }
+  .section-team p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 200;
+    max-width: 90%;
+    margin: 20px auto;
+    text-align: justify;
+  }
+  .section-team h4 {
+    font-family: "amaranth";
+    font-size: 20px;
+    font-weight: 400;
+    text-align: right;
+    width: 100%;
+  }
+}
